@@ -1,0 +1,12 @@
+ error:src refspec master does not match any
+ 原因分析
+
+引起该错误的原因是，目录中没有文件，空目录是不能提交上去的
+
+解决方法
+
+touch README
+git add README 
+git commit -m 'first commit'
+git push origin master
+
